@@ -1,0 +1,130 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Entity {
+  id          String       @id @default(uuid())
+  name        String       @unique
+  createdAt   DateTime     @default(now())
+  updatedAt   DateTime     @updatedAt
+  permissions Permission[]
+}
+
+model Role {
+  id          String       @id @default(uuid())
+  name        String       @unique
+  description String
+  active      Boolean      @default(true)
+  createdAt   DateTime     @default(now())
+  updatedAt   DateTime     @updatedAt
+  permissions Permission[]
+  user        User[]
+}
+
+model Permission {
+  id        String   @id @default(uuid())
+  entityId  String
+  entity    Entity   @relation(fields: [entityId], references: [id])
+  roleId    String
+  role      Role     @relation(fields: [roleId], references: [id])
+  canCreate Boolean  @default(false)
+  canRead   Boolean  @default(false)
+  canUpdate Boolean  @default(false)
+  canDelete Boolean  @default(false)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model User {
+  id                    String    @id @default(uuid())
+  roleId                String
+  role                  Role      @relation(fields: [roleId], references: [id])
+  name                  String
+  phone                 String
+  email                 String    @unique
+  imageUrl              String
+  user                  String    @unique
+  password              String
+  lastPassword          String?
+  lastPasswordChange    DateTime?
+  nextPasswordChange    DateTime?
+  loginAttempts         Int       @default(0)
+  unlockDate            DateTime?
+  active                Boolean   @default(false)
+  otp                   String    @default("000000")
+  otpExpiration         DateTime?
+  session               String?
+  sessionExpiration     DateTime?
+  accessToken           String?
+  accessTokenExpiration DateTime?
+  logged                Boolean   @default(false)
+  createdAt             DateTime  @default(now())
+  updatedAt             DateTime  @updatedAt
+  log                   Log[]
+}
+
+model Log {
+  id          String   @id @default(uuid())
+  timestamp   DateTime @default(now())
+  userId      String
+  user        User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  ipAddress   String
+  geolocation String
+  action      String
+  details     String
+
+  @@index([userId], name: "IX_Log_UserId")
+}
+
+model Product {
+  id              String            @id @default(uuid())
+  name            String            @unique
+  details         String
+  price           Int
+  available       Boolean           @default(true)
+  active          Boolean           @default(true)
+  createdAt       DateTime          @default(now())
+  updatedAt       DateTime          @updatedAt
+  imagesByProduct ImagesByProduct[]
+}
+
+model ImagesByProduct {
+  id        String   @id @default(uuid())
+  productId String
+  product   Product  @relation(fields: [productId], references: [id], onDelete: Cascade)
+  name      String
+  imageUrl  String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model FrequentQuestion {
+  id        String   @id @default(uuid())
+  title     String
+  question  String
+  answer    String
+  active    Boolean  @default(true)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+
+model Article {
+  id          String   @id @default(uuid())
+  title       String
+  subtitle    String
+  description String
+  imageName   String
+  imageUrl    String
+  tags        String   @default("Colombia")
+  active      Boolean  @default(true)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}

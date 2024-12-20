@@ -1,0 +1,1 @@
+export { GetLogs } from './logs.controller';

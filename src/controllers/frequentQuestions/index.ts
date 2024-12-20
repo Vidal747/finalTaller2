@@ -1,0 +1,1 @@
+export { GetFrequentQuestions, CreateFrequentQuestion, DeleteFrequentQuestion, GetFrequentQuestion, UpdateFrequentQuestion, GetActiveFrequentQuestions } from './frequentQuestions.controller';

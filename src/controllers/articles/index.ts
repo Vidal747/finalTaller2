@@ -1,0 +1,1 @@
+export { GetArticles, CreateArticle, DeleteArticle, GetArticle, UpdateArticle, GetActiveArticles } from './articles.controller';

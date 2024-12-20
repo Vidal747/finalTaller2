@@ -1,0 +1,1 @@
+export { CredentialsLogIn, GoogleLogIn, LogOut, validateUserPermissions } from './auth.controller';

@@ -1,0 +1,1 @@
+export { GetProducts, CreateProduct, DeleteProduct, GetProduct, UpdateProduct, GetActiveProducts } from './products.controller';

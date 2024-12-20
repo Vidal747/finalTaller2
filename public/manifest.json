@@ -1,0 +1,75 @@
+{
+	"short_name": "Softing",
+	"name": "Softing",
+	"description": "En Softing SAS, somos una agencia de marketing digital dedicada a potenciar tu marca mediante la combinación de creatividad y tecnología avanzada. Ofrecemos una gama completa de servicios diseñados para conectar clientes con su público objetivo y aumentar sus ventas.",
+	"start_url": "/",
+	"id": "/",
+	"display_override": [
+		"standalone",
+		"fullscreen",
+		"minimal-ui"
+	],
+	"display": "standalone",
+	"theme_color": "#FEFEFE",
+	"background_color": "#FEFEFE",
+	"icons": [
+		{
+			"src": "icon-512.png",
+			"type": "image/png",
+			"sizes": "512x512",
+			"purpose": "any"
+		},
+		{
+			"src": "icon-180.png",
+			"type": "image/png",
+			"sizes": "180x180",
+			"purpose": "any"
+		},
+		{
+			"src": "icon-192.png",
+			"type": "image/png",
+			"sizes": "192x192",
+			"purpose": "any"
+		},
+		{
+			"src": "icon-512.png",
+			"sizes": "512x512",
+			"type": "image/png",
+			"purpose": "maskable"
+		},
+		{
+			"src": "icon-192.png",
+			"sizes": "192x192",
+			"type": "image/png",
+			"purpose": "maskable"
+		}
+	],
+	"author": "Miguel Ángel Areiza Berrio",
+	"version": "1.0.0",
+	"categories": [
+		"productivity",
+		"business"
+	],
+	"dir": "ltr",
+	"lang": "es-CO",
+	"orientation": "portrait",
+	"serviceworker": "/sw.js",
+	"prefer_related_applications": false,
+	"scope": "/",
+	"screenshots": [
+		{
+			"src": "splash-screen1.webp",
+			"type": "image/png",
+			"sizes": "1366x725",
+			"platform": "wide",
+			"form_factor": "wide",
+			"label": "LandingPage"
+		},
+		{
+			"src": "splash-screen2.webp",
+			"type": "image/png",
+			"sizes": "512x641",
+			"label": "LandingPage"
+		}
+	]
+}

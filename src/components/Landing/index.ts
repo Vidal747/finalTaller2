@@ -1,0 +1,10 @@
+export { Header } from './Header';
+export { News } from './News';
+export { Products } from './Products';
+export { ButtonHelp } from './ButtonHelp';
+export { AboutUs } from './AbousUs';
+export { OurClients } from './OurClients';
+export { OurServices } from './OurServices';
+export { Contact } from './Contact';
+export { Footer } from './Footer';
+export { HeaderTitle } from './HeaderTitle';
