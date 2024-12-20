@@ -1,17 +1,17 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-	title: 'Preguntas frecuentes - Softing'
+    title: 'Preguntas frecuentes - Market Poli'
 };
 
 interface Props {
-	children: React.ReactNode;
+    children: React.ReactNode;
 };
 
 export default function FrequentQuestionsLayout({ children }: Props) {
-	return (
-		<>
-			{ children }
-		</>
-	)
+    return (
+        <>
+            {children}
+        </>
+    )
 };

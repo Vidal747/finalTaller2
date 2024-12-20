@@ -150,18 +150,18 @@ async function main() {
     });
 
     // User
-    const hashedPassword2 = await hash('Softing.12345', 10);
+    const hashedPassword2 = await hash('Market Poli.12345', 10);
 
     await prisma.user.upsert({
-        where: { user: 'AdminSofting'},
+        where: { user: 'Admin' },
         update: {},
         create: {
             roleId: rAdmin.id,
-            name: 'Administración Softing',
+            name: 'Administración Market Poli',
             phone: '0000000000',
-            email: 'softingc@gmail.com',
+            email: 'marketpoli@gmail.com',
             imageUrl: 'https://api.dicebear.com/7.x/bottts/svg',
-            user: 'AdminSofting',
+            user: 'Admin',
             password: hashedPassword2,
             active: true,
         },

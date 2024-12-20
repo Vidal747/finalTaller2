@@ -11,7 +11,7 @@ export function AboutUs() {
                 </h5>
                 <p className='max-w-md mx-auto text-black text-center md:text-start'>
                     Somos la agencia digital que potencia tu marca con creatividad y tecnología.
-                    Conectamos clientes con su público objetivo. En Softing SAS escuchamos, entendemos, investigamos y analizamos,
+                    Conectamos clientes con su público objetivo. En Market Poli SAS escuchamos, entendemos, investigamos y analizamos,
                     combinando creatividad y tecnología. .
                     <br />
 

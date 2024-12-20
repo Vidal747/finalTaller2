@@ -5,28 +5,28 @@ import { TbMessage } from 'react-icons/tb';
 const helpData = [
     {
         name: 'Teléfono',
-        link: 'tel:+573008840362 ',
+        link: 'tel:+573242886008 ',
         icon: <PiPhoneCall />,
     },
     {
         name: 'Mensaje',
-        link: 'sms:5730160526274',
+        link: 'sms:573242886008',
         icon: <TbMessage />,
     },
     {
         name: 'WhatsApp',
-        link: 'https://api.whatsapp.com/send?phone=573008840362 ',
+        link: 'https://api.whatsapp.com/send?phone=573242886008 ',
         icon: <FaWhatsapp />,
     },
     {
         icon: <FaFacebook />,
         name: 'Facebook ',
-        link: 'https://www.facebook.com/Softingc/',
+        link: 'https://www.facebook.com',
     },
     {
         icon: <FaInstagram />,
         name: 'Instagram    ',
-        link: 'https://www.instagram.com/softingcolombia/',
+        link: 'https://www.instagram.com',
     },
 ]
 

@@ -8,7 +8,7 @@ export function Header({ option }: Props) {
             <Link href='/#'>
                 <Image
                     src='/icon-180.png'
-                    alt='Logo de Softing'
+                    alt='Logo de Market Poli'
                     width={56}
                     height={56}
                     className='w-14 h-14 ml-5 md:ml-0 md:mt-6'

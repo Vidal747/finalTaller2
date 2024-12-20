@@ -11,11 +11,11 @@ declare global {
 export function DownloadApp() {
     const [isReadyForInstall, setIsReadyForInstall] = useState(false);
 
-    useEffect(() => {        
+    useEffect(() => {
         const handlePrompt = (e: Event) => {
             const cookies = document.cookie.split(';');
-            const isDeclined = cookies.some(cookie => cookie.includes('Softing.decline-install'));
-            
+            const isDeclined = cookies.some(cookie => cookie.includes('Market Poli.decline-install'));
+
             if (!isDeclined) {
                 e.preventDefault();
                 window.deferredPrompt = e;
@@ -29,7 +29,7 @@ export function DownloadApp() {
             window.removeEventListener('beforeinstallprompt', handlePrompt);
         }
     }, []);
-    
+
     const handleDownload = async () => {
         const promptEvent = window.deferredPrompt;
 
@@ -37,7 +37,7 @@ export function DownloadApp() {
             setIsReadyForInstall(false);
             return;
         };
-        
+
         const userChoice = await promptEvent.prompt();
 
         if (userChoice.outcome === 'accepted') {
@@ -48,9 +48,9 @@ export function DownloadApp() {
 
     const handleClose = (value: boolean) => {
         setIsReadyForInstall(value);
-        document.cookie = 'Softing.decline-install=true; path=/; samesite=strict; secure'
+        document.cookie = 'Market Poli.decline-install=true; path=/; samesite=strict; secure'
     }
-    
+
     return isReadyForInstall ? (
         <Modal
             isOpen={isReadyForInstall}
@@ -68,7 +68,7 @@ export function DownloadApp() {
                             ¿Deseas tenernos en tu banco de apps?
                         </h4>
                         <Button
-                            color='primary' 
+                            color='primary'
                             onClick={handleDownload}
                         >
                             Descargar

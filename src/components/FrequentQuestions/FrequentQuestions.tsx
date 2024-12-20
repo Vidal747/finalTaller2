@@ -42,7 +42,7 @@ export function FrequentQuestions({ questions, message }: Props) {
                                     <span className='block w-full text-sm text-right text-gray-400'>
                                         {formatDateTime(updatedAt.toString()).date}
                                         <br />
-                                        Softing
+                                        Market Poli
                                     </span>
                                 </AccordionItem>
                             ))}
@@ -67,7 +67,7 @@ export function FrequentQuestions({ questions, message }: Props) {
                     className="sm:h-96 sm:w-96 h-40 w-40 max-w-full max-h-full -z-10"
                 />
             </div>
-            
+
         </div>
     )
 }; 

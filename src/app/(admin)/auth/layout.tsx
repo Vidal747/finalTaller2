@@ -1,17 +1,17 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-	title: 'Auth - Softing'
+    title: 'Auth - Market Poli'
 };
 
 interface Props {
-	children: React.ReactNode;
+    children: React.ReactNode;
 };
 
 export default function AuthLayout({ children }: Props) {
-	return (
-		<>
-			{ children }
-		</>
-	)
+    return (
+        <>
+            {children}
+        </>
+    )
 };

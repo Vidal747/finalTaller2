@@ -47,7 +47,7 @@ export function Info({ service }: Props) {
             <div className='flex gap-4 justify-center md:justify-start mt-8'>
                 <Button
                     as={Link}
-                    href='https://api.whatsapp.com/send?phone=573008840362'
+                    href='https://api.whatsapp.com/send?phone=573242886008'
                     target='_blank'
                     color='primary'
                     endContent={<FaArrowRightLong />}
@@ -125,7 +125,7 @@ export function Info({ service }: Props) {
                             <div className='flex gap-6  items-center mt-4'>
                                 <Button
                                     as={Link}
-                                    href='https://api.whatsapp.com/send?phone=573008840362'
+                                    href='https://api.whatsapp.com/send?phone=573242886008'
                                     target='_blank'
                                     color='primary'
                                     endContent={<FaArrowRightLong />}

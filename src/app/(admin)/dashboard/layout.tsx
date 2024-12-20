@@ -3,18 +3,18 @@ import type { Metadata } from 'next';
 import { Header } from '@/components/Dashboard';
 
 export const metadata: Metadata = {
-	title: 'Dashboard - Softing',
+    title: 'Dashboard - Market Poli',
 };
 
 interface Props {
-	children: React.ReactNode;
+    children: React.ReactNode;
 };
 
 export default function DashboardLayout({ children }: Props) {
-	return (
-		<>
-			<Header />
-			{ children }
-		</>
-	)
+    return (
+        <>
+            <Header />
+            {children}
+        </>
+    )
 };

@@ -23,7 +23,7 @@ export function ProductCard({ imageUrl, name, details, price, available, variant
             </CardHeader>
             <Image
                 src={imageUrl || '/assets/noImage.svg'}
-                alt={`Imagen servicio ${name} Softing`}
+                alt={`Imagen servicio ${name} Market Poli`}
                 width={variant === 'slider' ? 288 : 224}
                 height={variant === 'slider' ? 450 : 288}
                 className='z-0 w-full h-full object-cover object-center'

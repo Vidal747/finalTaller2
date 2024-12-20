@@ -35,7 +35,7 @@ export function Footer() {
                     <Link href='/auth/signin'>
                         <Image
                             src='/assets/logo.webp'
-                            alt='Logo de Softing'
+                            alt='Logo de Market Poli'
                             width={250}
                             height={100}
                             draggable={false}
@@ -46,7 +46,7 @@ export function Footer() {
             <div className='max-w-5xl mx-auto flex flex-col md:flex-row gap-8 items-center mt-12'>
                 <span className='text-white text-center'>
                     <span className='whitespace-nowrap block'>
-                        2024 Softing. All Rights Reserved.
+                        2024 Market Poli. All Rights Reserved.
                     </span>
                     Powered by Critic.
                 </span>

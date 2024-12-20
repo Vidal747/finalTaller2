@@ -6,7 +6,7 @@ export function Spinner() {
         <div className='w-screen h-screen fixed top-0 left-0 z-50 flex flex-col justify-center items-center bg-black/40 backdrop-blur-sm'>
             <Image
                 src='/assets/logo.webp'
-                alt='Logo de Softing'
+                alt='Logo de Market Poli'
                 width='150'
                 height='60'
                 draggable='false'
@@ -24,7 +24,7 @@ export function Spinner() {
                     <div className='w-5 h-5 inline-block mt-12 rounded-full bg-baseRadial animate-boing8'>
                     </div>
                 </div>
-            </div> 
+            </div>
         </div>
     )
 };  

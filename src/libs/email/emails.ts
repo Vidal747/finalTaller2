@@ -65,7 +65,7 @@ const getActivateEmail = (url: string, otp: string) => {
                     <table border="0" cellpadding="0" cellspacing="0" width="480" >
                         <tr>
                             <td align="center" valign="top" style="padding: 2rem 1rem;">
-                                <img alt="Logo Softing" src="${process.env.APP_URL}/assets/logo.webp" width="180" style="display: block;" border="0">
+                                <img alt="Logo Market Poli" src="${process.env.APP_URL}/assets/logo.webp" width="180" style="display: block;" border="0">
                             </td>
                         </tr>
                     </table>
@@ -143,7 +143,7 @@ const getActivateEmail = (url: string, otp: string) => {
                         <tr>
                             <td bgcolor="#0088A6" align="center" style="padding: 2rem; color: #ffffff; text-align: center; font-size: 20px; font-weight: 600; line-height: 25px;" >
                                 <h2 style="font-size: 24px; font-weight: 400; margin: 0;">
-                                    ¿Quieres conocer más de Softing?
+                                    ¿Quieres conocer más de Market Poli?
                                 </h2>
                             </td>
                         </tr>
@@ -151,15 +151,15 @@ const getActivateEmail = (url: string, otp: string) => {
                         <tr>
                             <td bgcolor="#0088A6" align="left" style="padding: 0 2rem; color: #000; font-size: 18px; font-weight: 400; line-height: 25px;" >
                                 <p style="margin: 0;">
-                                    Da click en el siguiente enlace para conocer planes, tarifas, características y mucho más de Softing.
+                                    Da click en el siguiente enlace para conocer planes, tarifas, características y mucho más de Market Poli.
                                 </p>
                             </td>
                         </tr>
                         <!-- COPY -->
                         <tr>
                             <td bgcolor="#0088A6" align="left" style="padding: 1rem 2rem 2rem; border-radius: 0 0 1rem 1rem; font-size: 18px; font-weight: 400; line-height: 25px;" >
-                                <a href="https://www.Softing.com" target="_blank" style="color: #242629;">
-                                    Softing
+                                <a href="https://www.Market Poli.com" target="_blank" style="color: #242629;">
+                                    Market Poli
                                 </a>
                             </td>
                         </tr>
@@ -192,7 +192,7 @@ const getActivateEmail = (url: string, otp: string) => {
                         <tr>
                             <td bgcolor="#f4f4f4" align="left" style="padding: 0px 30px 30px 30px; color: #666666; font-family: 'Lato', Helvetica, Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 18px;" >
                                 <p style="margin: 0;">
-                                    ¿No eres tú? Si no solicitaste un código para registrarte en Softing.com, puedes ignorar este correo de manera segura. No se realizará la creación de tu cuenta ni cobros.
+                                    ¿No eres tú? Si no solicitaste un código para registrarte en Market Poli.com, puedes ignorar este correo de manera segura. No se realizará la creación de tu cuenta ni cobros.
                                 </p>
                             </td>
                         </tr>                    
@@ -200,7 +200,7 @@ const getActivateEmail = (url: string, otp: string) => {
                         <tr>
                             <td bgcolor="#f4f4f4" align="left" style="padding: 0px 30px 30px 30px; color: #666666; font-family: 'Lato', Helvetica, Arial, sans-serif; font-size: 14px; font-weight: 400; line-height: 18px;" >
                                 <p style="margin: 0;">
-                                    2024 Softing. All Rights Reserved. <br>
+                                    2024 Market Poli. All Rights Reserved. <br>
                                     Powered by Critic
                                 </p>
                             </td>

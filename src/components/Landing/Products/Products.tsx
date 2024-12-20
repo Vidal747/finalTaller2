@@ -29,7 +29,7 @@ export function Products({ products }: Props) {
                     </h2>
                     <p className='text-lg text-center flex gap-3 py-20 justify-center items-center'>
                         <span className='hidden md:flex w-12 border-b-3 border-primary rounded-full'></span>
-                        Somos la agencia digital que potencia tu marca con creatividad y tecnología. Conectamos clientes con su público objetivo. En Softing SAS escuchamos, entendemos, investigamos y analizamos, combinando creatividad y tecnología. Generemos experiencias memorables con tácticas de marketing digital integrales que aumentan las ventas de tu negocio.
+                        Somos la agencia digital que potencia tu marca con creatividad y tecnología. Conectamos clientes con su público objetivo. En Market Poli SAS escuchamos, entendemos, investigamos y analizamos, combinando creatividad y tecnología. Generemos experiencias memorables con tácticas de marketing digital integrales que aumentan las ventas de tu negocio.
                         <span className='hidden md:flex w-12 border-b-3 border-primary rounded-full'></span>
                     </p>
                     <h2 className='text-4xl md:text-5xl text-center font-black'>

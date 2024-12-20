@@ -22,7 +22,7 @@ export function Contact() {
                     <div className='flex gap-x-40 gap-y-10 flex-col md:flex-row items-center justify-between py-10'>
                         <Button
                             as={Link}
-                            href='https://api.whatsapp.com/send?phone=573008840362'
+                            href='https://api.whatsapp.com/send?phone=573242886008'
                             variant='bordered'
                             className='w-minlex h-16 border-foreground border-1 px-10 text-xl font-semibold'
                         >
@@ -33,7 +33,7 @@ export function Contact() {
                             <span className='w-16 min-w-[64px] h-16 rounded-full bg-white flex justify-center items-center'>
                                 <Image
                                     src='/icon-180.png'
-                                    alt='Logo de Softing'
+                                    alt='Logo de Market Poli'
                                     width={50}
                                     height={50}
                                 />

@@ -1,17 +1,17 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-	title: 'Blog - Softing'
+    title: 'Blog - Market Poli'
 };
 
 interface Props {
-	children: React.ReactNode;
+    children: React.ReactNode;
 };
 
 export default function BlogLayout({ children }: Props) {
-	return (
-		<>
-			{ children }
-		</>
-	)
+    return (
+        <>
+            {children}
+        </>
+    )
 };

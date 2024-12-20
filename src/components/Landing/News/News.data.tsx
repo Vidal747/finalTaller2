@@ -1,7 +1,3 @@
-import { GiFruitTree } from 'react-icons/gi';
-import { PiCertificateFill, PiStarFill } from 'react-icons/pi';
-import { RiHandHeartFill } from 'react-icons/ri';
-
 const neswData = [
     {
         name: 'Primera',
